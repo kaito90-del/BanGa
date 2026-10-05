@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <!-- mobile: chặn zoom bằng chạm 2 ngón, lấp đầy màn hình -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <meta name="theme-color" content="#050816">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="description" content="GALACTIC INVADERS - Diamond Edition: game bắn máy bay arcade, chơi trực tiếp trên trình duyệt điện thoại &amp; máy tính. Trùm, kim cương, 8 máy bay.">
+    <title>BẮN GÀ VER 1 BY LÊ NGỌC MINH</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        html, body {
+            height: 100%;
+            background: #000;
+            overflow: hidden;
+            /* chống kéo cuộn / pull-to-refresh trên mobile */
+            overscroll-behavior: none;
+            touch-action: none;
+            -webkit-user-select: none;
+            user-select: none;
+            -webkit-touch-callout: none;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #game {
+            display: block;
+            background: #050816;
+            touch-action: none;
+        }
+
+        /* gợi ý xoay ngang khi điện thoại đang để dọc */
+        #rotateHint {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            padding: 8px 12px;
+            padding-top: calc(8px + env(safe-area-inset-top, 0px));
+            color: #ffdcdc;
+            background: rgba(80, 20, 30, 0.85);
+            font: bold 13px/1.4 'Segoe UI', Tahoma, Arial, sans-serif;
+            z-index: 10;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="rotateHint">📱 XOAY NGANG MÀN HÌNH ĐỂ CHƠI TỐT HƠN</div>
+    <canvas id="game" width="900" height="700"></canvas>
+
+    <!-- game (thứ tự nạp quan trọng) -->
+    <script src="js/core.js"></script>
+    <script src="js/audio.js"></script>
+    <script src="js/sprites.js"></script>
+    <script src="js/save.js"></script>
+    <script src="js/entities.js"></script>
+    <script src="js/bossmanager.js"></script>
+    <script src="js/shop.js"></script>
+    <script src="js/input.js"></script>
+    <script src="js/game.js"></script>
+</body>
+</html>

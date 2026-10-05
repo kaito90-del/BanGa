@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+    <rect width="32" height="32" fill="#050816"/>
+    <!-- tàu người chơi (pixel 4) -->
+    <g fill="#46e65a">
+        <rect x="13" y="5" width="4" height="4"/>
+        <rect x="13" y="9" width="4" height="4"/>
+        <rect x="9"  y="13" width="12" height="4"/>
+        <rect x="5"  y="17" width="20" height="4"/>
+        <rect x="9"  y="21" width="12" height="4"/>
+        <rect x="9"  y="25" width="4" height="4"/>
+        <rect x="17" y="25" width="4" height="4"/>
+    </g>
+    <rect x="13" y="9" width="4" height="4" fill="#b4ffc8"/>
+    <!-- kim cương -->
+    <g>
+        <path d="M26 4 L30 8 L26 12 L22 8 Z" fill="#46d7ff"/>
+        <path d="M26 4 L30 8 L26 8 Z" fill="#b9f5ff"/>
+        <path d="M26 12 L22 8 L26 8 Z" fill="#1978c8"/>
+    </g>
+</svg>
